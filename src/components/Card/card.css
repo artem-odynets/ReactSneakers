@@ -1,0 +1,69 @@
+.offer-card {
+  border-radius: 40px;
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  font-family: Inter;
+  padding: 25px 20px 0px 20px;
+  max-width: 210px;
+
+  position: relative; 
+  margin-bottom: 50px;
+}
+
+.offer-card:hover {
+  border-radius: 40px;
+  border: 1px solid #f8f8f8;
+  background: #fff;
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.07);
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.card-favorite {
+  position: absolute;
+  cursor: pointer;
+}
+
+.add-sneakers {
+  cursor: pointer;
+}
+
+.inner-card {
+  text-align: center;
+}
+
+.inner-card img {
+  width: 133px;
+  height: 112px;
+}
+
+.inner-card p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 14px 0px;
+}
+
+.price-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-price-card p {
+  margin: 0;
+  padding: 0;
+  color: #bdbdbd;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.inner-price-card b {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+
+}

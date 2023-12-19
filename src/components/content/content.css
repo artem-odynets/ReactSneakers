@@ -1,0 +1,42 @@
+.content-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.content-input::placeholder {
+  color: #c4c4c4;
+}
+
+.not-found-message {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+color: #9d9d9d;
+font-size: 20px;
+font-weight: 600;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.content-input {
+  position: relative;
+}
+
+.close-value-input {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  z-index: 20;
+  padding: 5px;
+  cursor: pointer;
+}

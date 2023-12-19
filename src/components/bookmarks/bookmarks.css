@@ -1,0 +1,136 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.overlay.openeds {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bookmarks {
+  z-index: 10;
+  position: fixed;
+  right: -300%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: right 0.3s ease-in-out;
+  overflow: auto;
+}
+
+.bookmarks.openeds {
+  right: 0;
+}
+
+.header-bookmarks {
+
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+
+.offer-bookmarks {
+  position: relative;
+  column-gap: 25px;
+  border-radius: 20px;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+  margin-bottom: 10px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-bookmarks p {
+  max-width: 250px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.wrapper-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  justify-content: start;
+ 
+}
+
+.bookmarks-favorite {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 80px;
+  top: 20px;
+  z-index: 10;
+}
+
+.wrapper-empty-bookmarks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.empty-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrapper-empty-bookmarks h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 24px 0 0 0;
+}
+
+.wrapper-empty-bookmarks p {
+  color: #5f5e5e;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 70px 0;
+}
+
+.empty-button-bookmarks {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 18px;
+  background: #9dd458;
+  padding: 19px 60px;
+  position: relative;
+}
+
+.empty-button-bookmarks img {
+  position: absolute;
+  top: 21px;
+  left: 35px;
+}
+
+.empty-button-bookmarks:hover img {
+  transform: translateX(-10px);
+  transition: transform 0.25s ease-in-out;
+}
+
+.wrap-book {
+  padding: 0 20px;
+}
+ 
