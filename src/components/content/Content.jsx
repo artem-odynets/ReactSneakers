@@ -1,6 +1,8 @@
-import React from "react";
-import "./content.css";
-import Card from "../Card/Card";
+// Імпортуємо зображення
+import searchIcon from "../../../img/content/search.png";
+import removeIcon from "/img/cart/remove.svg"; // Припускаючи, що цей файл знаходиться у корені вашого проекту
+
+// ...
 
 const Content = ({
   valueInput,
@@ -11,26 +13,27 @@ const Content = ({
 }) => {
   return (
     <>
-    <div className="wrapper-content">
-      <div className="content-menu">
-        <h1 className="content-title">Всі кросівки</h1>
-        <form className="content-form">
-          <img src="../../../img/content/search.png" className="icon-search" />
-          <input
-            onChange={valueInput}
-            value={searchValue}
-            placeholder="Пошук..."
-            className="content-input"
-          />
-          {searchValue && (
-            <img
-              src={"/img/cart/remove.svg"}
-              onClick={() => setSearchValue("")}
-              className="close-value-input"
+      <div className="wrapper-content">
+        <div className="content-menu">
+          <h1 className="content-title">Всі кросівки</h1>
+          <form className="content-form">
+            <img src={searchIcon} className="icon-search" alt="Search Icon" />
+            <input
+              onChange={valueInput}
+              value={searchValue}
+              placeholder="Пошук..."
+              className="content-input"
             />
-          )}
-        </form>
-      </div>
+            {searchValue && (
+              <img
+                src={removeIcon}
+                onClick={() => setSearchValue("")}
+                className="close-value-input"
+                alt="Remove Icon"
+              />
+            )}
+          </form>
+        </div>
       </div>
 
       <div className="inner">
