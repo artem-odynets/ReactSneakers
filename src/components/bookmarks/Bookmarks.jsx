@@ -44,7 +44,7 @@ const Bookmarks = ({
           <div className="header-bookmarks">
             <button onClick={toggleFavorite}>
               <img
-                src={"/img/bookmarks/bookmarks-arrow.png"}
+                src={"./img/bookmarks/bookmarks-arrow.png"}
                 height={"35"}
                 width={"35"}
                 alt="Remove"
@@ -73,7 +73,7 @@ const Bookmarks = ({
           ) : (
             <div className="empty-info">
             <div className="wrapper-empty-bookmarks">
-              <img src="../../img/bookmarks/empty-bookmarks.png" />
+              <img src="./img/bookmarks/empty-bookmarks.png" />
               
               <h3>Закладок немає :(</h3>
               <p>Ви нічого не додавали до закладок</p>
@@ -82,7 +82,7 @@ const Bookmarks = ({
                 onClick={toggleFavorite}
                 className="empty-button-bookmarks"
               >
-                <img src="../../img/cart/empty-arrow.png" />
+                <img src="./img/cart/empty-arrow.png" />
                 Повернутися назад
               </button>
             </div>
