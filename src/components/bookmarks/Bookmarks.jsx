@@ -44,7 +44,7 @@ const Bookmarks = ({
           <div className="header-bookmarks">
             <button onClick={toggleFavorite}>
               <img
-                src={"./img/bookmarks/bookmarks-arrow.png"}
+                src={"/img/bookmarks/bookmarks-arrow.png"}
                 height={"35"}
                 width={"35"}
                 alt="Remove"

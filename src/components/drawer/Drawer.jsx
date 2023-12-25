@@ -29,7 +29,7 @@ const Drawer = ({ isOpen, toggleDrawer, items = [], formatNumber }) => {
           <div className="header-cart">
             <h2>Кошик</h2>
             <button onClick={toggleDrawer}>
-              <img src={"./img/cart/remove.svg"} height={"50"} width={"50"} alt="Remove Icon" />
+              <img src={"/img/cart/remove.svg"} height={"50"} width={"50"} alt="Remove Icon" />
             </button>
           </div>
 
@@ -45,7 +45,7 @@ const Drawer = ({ isOpen, toggleDrawer, items = [], formatNumber }) => {
             ))
           ) : (
             <div className="empty-cart-message">
-              <img src={"./img/cart/empty.png"} alt="Empty Cart" />
+              <img src={"/img/cart/empty.png"} alt="Empty Cart" />
               <h3>Кошик порожній</h3>
               <p className="line-break">
                 <span>Додайте хоча б одну пару </span>
@@ -53,7 +53,7 @@ const Drawer = ({ isOpen, toggleDrawer, items = [], formatNumber }) => {
               </p>
 
               <button onClick={toggleDrawer} className="empty-cart-button">
-                <img src={"./img/cart/empty-arrow.png"} alt="Empty Arrow" />
+                <img src={"/img/cart/empty-arrow.png"} alt="Empty Arrow" />
                 Повернутися назад
               </button>
             </div>
@@ -77,7 +77,7 @@ const Drawer = ({ isOpen, toggleDrawer, items = [], formatNumber }) => {
               </ul>
 
               <button className="order-btn">
-                <img src={"./img/cart/arrow-order.svg"} alt="Arrow Order" />
+                <img src={"/img/cart/arrow-order.svg"} alt="Arrow Order" />
                 Оформити замовлення
               </button>
             </div>
