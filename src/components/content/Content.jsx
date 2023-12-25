@@ -1,6 +1,6 @@
 // Імпортуємо зображення
-import searchIcon from "/img/content/search.png";
-import removeIcon from "/img/cart/remove.svg"; // Припускаючи, що цей файл знаходиться у корені вашого проекту
+import searchIcon from "./img/content/search.png";
+import removeIcon from "./img/cart/remove.svg"; // Припускаючи, що цей файл знаходиться у корені вашого проекту
 
 // ...
 

@@ -73,7 +73,7 @@ const Bookmarks = ({
           ) : (
             <div className="empty-info">
             <div className="wrapper-empty-bookmarks">
-              <img src="./../img/bookmarks/empty-bookmarks.png" />
+              <img src="./img/bookmarks/empty-bookmarks.png" />
               
               <h3>Закладок немає :(</h3>
               <p>Ви нічого не додавали до закладок</p>
