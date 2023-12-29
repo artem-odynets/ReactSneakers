@@ -1,9 +1,5 @@
-// Імпортуємо зображення
-import searchIcon from "./img/content/search.png";
-import removeIcon from "./img/cart/remove.svg"; // Припускаючи, що цей файл знаходиться у корені вашого проекту
-
-// ...
-
+import Card from "../Card/Card";
+import "./content.css";
 const Content = ({
   valueInput,
   searchValue,
@@ -17,7 +13,7 @@ const Content = ({
         <div className="content-menu">
           <h1 className="content-title">Всі кросівки</h1>
           <form className="content-form">
-            <img src={searchIcon} className="icon-search" alt="Search Icon" />
+            <img src={"./img/content/search.png"} className="icon-search" alt="Search Icon" />
             <input
               onChange={valueInput}
               value={searchValue}
@@ -26,7 +22,7 @@ const Content = ({
             />
             {searchValue && (
               <img
-                src={removeIcon}
+                src={"./img/cart/remove.svg"}
                 onClick={() => setSearchValue("")}
                 className="close-value-input"
                 alt="Remove Icon"
@@ -34,7 +30,7 @@ const Content = ({
             )}
           </form>
         </div>
-      </div>
+      
 
       <div className="inner">
         {filteredData.length === 0 ? (
@@ -53,6 +49,7 @@ const Content = ({
             />
           ))
         )}
+      </div>
       </div>
     </>
   );

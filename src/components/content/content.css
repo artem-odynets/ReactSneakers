@@ -28,6 +28,10 @@ font-weight: 600;
   margin-bottom: 30px;
 }
 
+.wrapper-content {
+  flex-wrap: wrap;
+}
+
 .content-input {
   position: relative;
 }
